@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let animal={
+            eats:true,
+            walk()
+            {
+                alert("Animal Walk");
+            }
+        };
+        let rabbit={
+            jumps:true,
+            __proto__:animal
+        };
+        let longEars={
+            earLength:10,
+            __proto__:rabbit
+        };
+        longEars.walk();
+        alert(longEars.jumps);
+    </script>
+</body>
+</html>

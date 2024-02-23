@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal
+        {
+            constructor(name1)
+            {
+                this.name1="Animal";
+            }
+        }
+        class Dog extends Animal
+        {
+            constructor(name2,breed)
+            {
+                super();
+                this.name2=name2;
+                this.breed=breed;
+            }
+        }
+        class Cat extends Animal
+        {
+            constructor(name3,breed)
+            {
+                super();
+                this.name3=name3;
+                this.breed=breed;
+            }
+        }
+        var obj1=new Dog("Bruno","Husky");
+        var obj2=new Cat("Fluffy","Siberian");
+        document.write(obj1.name1+ " "+obj1.name2+" "+obj1.breed+"<br>");
+        document.write(obj2.name1+ " "+obj2.name3+" "+obj2.breed);
+
+    </script>
+</body>
+</html>

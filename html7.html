@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student
+        {
+            constructor(name,rno,gender)
+            {
+                this.name=name;
+                this.rno=rno;
+                this.gender=gender;
+            }
+            details()
+            {
+                document.write("Name is: "+this.name+"<br>Roll No. is: "+this.rno+"<br>Gender is: "+this.gender);
+            }
+
+        }
+        var a=new Student("Ayush",35,"Male");
+        a.details();
+    </script>
+</body>
+</html>
